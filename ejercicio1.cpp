@@ -4,21 +4,18 @@ using namespace std;
 
 int main() {
     
-string linea;
-cout << "ingresa el nombre del documento: " << endl;
-getline(cin, linea);
+    string linea;
+    cout << "Ingresa el nombre del documento: " << endl;
+    getline(cin, linea);
 
-int inicio = 0;
-int i = 0;
-while (i < linea.length()) {
-    int inicio_palabra = i;
-    while (i < linea.length() && linea[i] != ' ') {
-        i++;
+    int inicio = 0;
+
+    for (int i = 0; i <= linea.size(); i++) {
+        if (linea[i] == ' ' || i == linea.size()) {
+            inicio = i;
+            cout << inicio << "\n";
+        }
     }
-    inicio = i;
-    cout << inicio << "\n";
-    i++;
-}
 
     return 0;
 }
