@@ -8,12 +8,9 @@ int main() {
     cout << "Ingresa el nombre del documento: " << endl;
     getline(cin, linea);
 
-    int inicio = 0;
-
     for (int i = 0; i <= linea.size(); i++) {
         if (linea[i] == ' ' || i == linea.size()) {
-            inicio = i;
-            cout << inicio << "\n";
+            cout << i << "\n";
         }
     }
 
