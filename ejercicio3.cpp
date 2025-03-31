@@ -13,6 +13,7 @@ int main () {
             cout << "Om-nom-nom :P" << endl;
         } else if (cant_pastel == 0) {
             cout << "Sin pastel :(" << endl;
+            break;
         } else {
             cout << "no compatible" << endl;
         }
